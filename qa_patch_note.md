@@ -1,0 +1,1 @@
+QA visual y funcional aplicado: navegación móvil, flujo de confirmación, estados de reserva y mejoras responsive.
