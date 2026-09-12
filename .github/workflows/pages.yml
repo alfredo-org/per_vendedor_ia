@@ -10,6 +10,9 @@ permissions:
   pages: write
   id-token: write
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 concurrency:
   group: pages
   cancel-in-progress: true
@@ -23,12 +26,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-      - name: Configure Pages
+
+      - name: Configure and enable Pages
         uses: actions/configure-pages@v5
+        with:
+          token: ${{ secrets.REPO_FACTORY_TOKEN }}
+          enablement: true
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
           path: .
-      - name: Deploy
+
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
