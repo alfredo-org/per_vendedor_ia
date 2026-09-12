@@ -1,1 +1,218 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f3f5f7"><title>Vendedor IA · Repuestos Camiones</title><meta name="description" content="Maqueta comercial de Vendedor IA local para WhatsApp, inventario de repuestos de camiones y nota de venta"><link rel="stylesheet" href="styles.css"></head><body><div class="shell"><aside class="sidebar"><div class="brand"><div class="brandmark">V</div><div><strong>Vendedor IA</strong><span>Truck Parts Sales OS</span></div></div><nav class="nav"><button class="active" data-view="ventas">Ventas</button><button data-view="inventario">Inventario</button><button data-view="pedidos">Pedidos</button><button data-view="arquitectura">Arquitectura</button></nav><div class="local"><div><span class="status"></span><small>IA local activa</small></div><strong>Mac mini M6 · 32 GB</strong><small>Inferencia, audio, memoria comercial y reglas privadas dentro de la empresa.</small></div><div class="sidefoot"><span>Demo · Repuestos camiones</span><button id="themeToggle" class="icon" aria-label="Cambiar tema">◐</button></div></aside><main class="workspace"><header class="topbar"><div><p class="eyebrow">CENTRO DE VENTAS</p><h1 id="viewTitle">Venta asistida por WhatsApp</h1></div><div class="actions"><div class="pill"><span class="status"></span>WhatsApp conectado</div><button id="runDemo" class="primary">Avanzar simulación</button></div></header><section id="ventas" class="view active"><div class="sales-kpis"><div><span>Cliente</span><strong>Transportes San Martín</strong><small>Cuenta recurrente · crédito habilitado</small></div><div><span>Vehículo</span><strong>Volvo FH 500 · 2021</strong><small>Patente demo XXYY12</small></div><div><span>Compatibilidad</span><strong class="good">Validada</strong><small>Chasis termina en K4821931</small></div><div><span>Intención</span><strong>Retiro hoy</strong><small>Sucursal Renca</small></div></div><div class="grid"><section class="panel inbox"><div class="panelhead"><div><p class="eyebrow">WHATSAPP</p><h2>Conversaciones</h2></div><span class="badge">5 activas</span></div><div class="list"><button class="conversation active"><div class="avatar">MS</div><div><strong>Marcelo Soto</strong><p>Volvo FH · frenos delanteros</p></div></button><button class="conversation"><div class="avatar">FC</div><div><strong>Flota Central</strong><p>Necesito 6 filtros de petróleo.</p></div></button><button class="conversation"><div class="avatar">JP</div><div><strong>Juan Paredes</strong><p>Audio · kit embrague Scania</p></div></button><button class="conversation"><div class="avatar">TR</div><div><strong>Transportes Rivera</strong><p>¿Tienen foco trasero Actros?</p></div></button><button class="conversation"><div class="avatar">MA</div><div><strong>Mecánica Andes</strong><p>Cotizar 4 amortiguadores.</p></div></button></div></section><section class="panel chat"><div class="chathead"><div class="avatar">MS</div><div><h2>Marcelo Soto</h2><p>Transportes San Martín · cliente recurrente</p></div><div class="aistate"><span class="status"></span>Atendido por IA local</div></div><div id="chatFeed" class="feed"><div class="msg client">Hola, necesito pastillas delanteras para un Volvo FH 500 año 2021. ¿Tienen para retirar hoy?<span>10:12</span></div><div class="msg ai">Sí, te ayudo. Antes de reservar necesito validar la versión exacta. ¿Me mandas los últimos 8 caracteres del chasis o una foto del padrón?<span>10:12 · IA</span></div><div class="msg client audio"><button aria-label="Reproducir audio">▶</button><div class="wave"><i style="--h:8px"></i><i style="--h:16px"></i><i style="--h:12px"></i><i style="--h:20px"></i><i style="--h:9px"></i><i style="--h:18px"></i><i style="--h:13px"></i><i style="--h:21px"></i><i style="--h:10px"></i><i style="--h:15px"></i></div><span>0:09</span></div><div class="transcript">Transcripción local: “Sí, termina en K4821931. Es FH quinientos, dos mil veintiuno.”</div><div class="system-note"><strong>Validación automática</strong><span>Vehículo identificado · Volvo FH 500 · 2021 · configuración compatible con kit BRK-FH5-E6.</span></div><div class="msg ai">Listo, compatibilidad validada. Tengo el <strong>Kit de pastillas delanteras ProBrake FH Euro 6</strong>, SKU <strong>BRK-FH5-E6</strong>. En Renca quedan <strong>3 kits</strong> a <strong>$186.900 + IVA</strong>. También tengo una alternativa Premium a $219.900 + IVA. ¿Quieres el ProBrake?<span>10:13 · IA</span></div></div><div class="composer"><input value="La IA continúa la venta desde WhatsApp…" readonly><button aria-label="Enviar">↑</button></div></section><aside class="stack"><section class="panel stock-card"><div class="stock-title"><div><p class="eyebrow">STOCK + COMPATIBILIDAD</p><h3>ProBrake FH Euro 6</h3></div><span class="compat">✓ Compatible</span></div><div class="product"><div class="producticon">PB</div><div><strong>Kit pastillas freno delantero</strong><span>SKU BRK-FH5-E6 · Línea pesada</span></div></div><div class="rows"><div class="row"><span>Sucursal Renca</span><strong class="good">3 disponibles</strong></div><div class="row"><span>Sucursal Quilicura</span><strong>1 disponible</strong></div><div class="row"><span>Bodega Central</span><strong>12 disponibles</strong></div></div><div class="price"><span>Precio neto</span><strong>$186.900</strong></div><div class="alt"><span>Alternativa</span><strong>PremiumBrake PBX-500</strong><small>$219.900 + IVA · Renca: 5</small></div></section><section class="panel order-card"><div class="order-head"><div><p class="eyebrow">NOTA DE VENTA</p><h3 id="orderStatus">Borrador automático</h3></div><span id="orderIndicator" class="statuschip">Esperando confirmación</span></div><div class="orderfields"><div><span>Empresa</span><strong>Transportes San Martín</strong></div><div><span>Contacto</span><strong>Marcelo Soto</strong></div><div><span>Producto</span><strong>BRK-FH5-E6</strong></div><div><span>Cantidad</span><strong>1 kit</strong></div><div><span>Retiro</span><strong>Renca · hoy</strong></div><div><span>Pago</span><strong>En caja / crédito</strong></div></div><div class="price"><span>Total c/IVA</span><strong id="orderTotal">$222.411</strong></div><button id="reserveButton" class="secondary">Confirmar reserva + NV</button><p class="micro">Demo: no modifica inventario ni ERP real.</p></section></aside></div></section><section id="inventario" class="view"><div class="section-title"><div><p class="eyebrow">INVENTARIO REPUESTOS CAMIONES</p><h2>Stock que consulta el vendedor IA</h2><p class="archlead">Ejemplo de catálogo operacional. En producción se reemplaza por la BD/ERP del cliente y sus códigos reales.</p></div><span class="badge"><span class="status"></span>Sincronizado</span></div><div class="filters panel"><span>Marca: Todas</span><span>Familia: Línea pesada</span><span>Sucursal: Todas</span><strong>6 productos de ejemplo</strong></div><div class="table panel truck-table"><div class="trow head"><span>Producto / aplicación</span><span>SKU</span><span>Renca</span><span>Quilicura</span><span>Bodega</span><span>Precio neto</span></div><div class="trow"><strong>Kit pastillas delanteras · Volvo FH/FM Euro 6</strong><span>BRK-FH5-E6</span><span class="good">3</span><span>1</span><span>12</span><strong>$186.900</strong></div><div class="trow"><strong>Filtro combustible heavy-duty · Volvo FH/FM</strong><span>FLT-FUEL-V46</span><span>18</span><span>9</span><span>44</span><strong>$24.500</strong></div><div class="trow"><strong>Filtro aire primario · Scania R/S</strong><span>FLT-AIR-SRS</span><span>6</span><span class="low">2</span><span>20</span><strong>$58.900</strong></div><div class="trow"><strong>Kit embrague 430 mm · Scania R Euro 6</strong><span>CLU-SR-430</span><span class="low">1</span><span>0</span><span>5</span><strong>$689.000</strong></div><div class="trow"><strong>Amortiguador cabina · Mercedes Actros</strong><span>SUS-ACT-CAB</span><span>8</span><span>5</span><span>16</span><strong>$94.900</strong></div><div class="trow"><strong>Foco trasero derecho LED · Actros MP4</strong><span>ELE-ACT-RL</span><span>4</span><span>3</span><span>9</span><strong>$129.900</strong></div></div></section><section id="pedidos" class="view"><div class="section-title"><div><p class="eyebrow">PEDIDOS</p><h2>Ventas iniciadas por conversación</h2></div><span class="badge">Hoy</span></div><div class="orders"><article class="panel order-mini"><span class="statuschip ready">Listo para retiro</span><h3>NV-58124</h3><p>Flota Central · Filtros combustible x6</p><footer><span>$174.930 c/IVA</span><strong>Renca</strong></footer></article><article class="panel order-mini"><span class="statuschip">En conversación</span><h3 id="miniOrder">Borrador</h3><p>Transportes San Martín · Kit freno Volvo FH</p><footer><span>$222.411 c/IVA</span><strong>IA local</strong></footer></article><article class="panel order-mini"><span class="statuschip ready">Pagado</span><h3>NV-58109</h3><p>Mecánica Andes · Amortiguador cabina x4</p><footer><span>$451.724 c/IVA</span><strong>Retirado</strong></footer></article></div><div class="panel workflow"><div><b>1</b><span>Consulta</span><small>WhatsApp/audio</small></div><i>→</i><div><b>2</b><span>Identificación</span><small>vehículo/chasis</small></div><i>→</i><div><b>3</b><span>Compatibilidad</span><small>reglas + catálogo</small></div><i>→</i><div><b>4</b><span>Stock/precio</span><small>ERP/BD</small></div><i>→</i><div><b>5</b><span>Confirmación</span><small>cliente acepta</small></div><i>→</i><div><b>6</b><span>Reserva + NV</span><small>retiro en tienda</small></div></div></section><section id="arquitectura" class="view"><div class="section-title"><div><p class="eyebrow">ARQUITECTURA PROPUESTA</p><h2>IA local conectada al proceso comercial real</h2><p class="archlead">El modelo conversa y entiende audio, pero no inventa inventario ni compatibilidades: esas decisiones provienen de servicios de negocio controlados.</p></div><span class="badge">Local first</span></div><div class="flow panel"><div class="node"><b>01</b><strong>WhatsApp</strong><small>Texto · audio · fotos</small></div><div class="arrow">→</div><div class="node"><b>02</b><strong>Gateway</strong><small>Webhook · identidad · cola</small></div><div class="arrow">→</div><div class="node core"><b>03</b><strong>Vendedor IA · M6</strong><small>LLM · STT · memoria · políticas</small></div><div class="arrow">→</div><div class="node"><b>04</b><strong>Motor comercial</strong><small>Compatibilidad · stock · precio · cliente</small></div><div class="arrow">→</div><div class="node"><b>05</b><strong>ERP / Inventario</strong><small>Reserva · NV · trazabilidad</small></div><div class="arrow">→</div><div class="node"><b>06</b><strong>Tienda</strong><small>Picking · pago · retiro</small></div></div><div class="caps"><article class="panel cap"><div class="capicon">VIN</div><h3>Compatibilidad primero</h3><p>Pide patente, chasis, VIN o modelo/año antes de afirmar que un repuesto sirve.</p></article><article class="panel cap"><div class="capicon">STK</div><h3>Stock real</h3><p>Consulta disponibilidad por sucursal y ofrece traslado o equivalente cuando falta inventario.</p></article><article class="panel cap"><div class="capicon">NV</div><h3>Venta trazable</h3><p>Reserva sólo después de la aceptación y genera una nota de venta recuperable en tienda.</p></article><article class="panel cap"><div class="capicon">H</div><h3>Escalamiento humano</h3><p>Deriva cotizaciones complejas, dudas técnicas, descuentos fuera de política o baja confianza.</p></article></div><div class="panel guardrails"><h3>Reglas para que el flujo sea confiable</h3><div><span>01</span><p><strong>No alucinar compatibilidad.</strong> Si no hay identificación suficiente del vehículo, preguntar antes de vender.</p></div><div><span>02</span><p><strong>No prometer stock sin consulta.</strong> La respuesta comercial usa disponibilidad vigente de la BD/ERP.</p></div><div><span>03</span><p><strong>No reservar sin aceptación.</strong> Primero confirma producto, cantidad, precio, sucursal y condición de pago.</p></div><div><span>04</span><p><strong>Humano cuando corresponde.</strong> Casos ambiguos o excepciones quedan con contexto completo para un vendedor.</p></div></div></section></main></div><div id="toast" class="toast" role="status"></div><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f4f6f8">
+  <title>Vendedor IA · Repuestos Camiones</title>
+  <meta name="description" content="Maqueta comercial de Vendedor IA local para WhatsApp, inventario de repuestos de camiones y nota de venta">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brandmark">V</div>
+      <div><strong>Vendedor IA</strong><span>Ventas · Línea Pesada</span></div>
+    </div>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <button class="active" data-view="ventas">Ventas</button>
+      <button data-view="inventario">Inventario</button>
+      <button data-view="pedidos">Pedidos</button>
+      <button data-view="arquitectura">Arquitectura</button>
+    </nav>
+
+    <div class="local">
+      <div class="local-status"><span class="status"></span><small>Nodo IA local disponible</small></div>
+      <strong>Mac mini M6 · 32 GB</strong>
+      <small>Inferencia, audio, memoria comercial y reglas privadas dentro de la empresa.</small>
+    </div>
+
+    <div class="sidefoot">
+      <span>Demo comercial</span>
+      <button id="themeToggle" class="icon" aria-label="Cambiar tema">◐</button>
+    </div>
+  </aside>
+
+  <main class="workspace">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">CENTRO DE VENTAS</p>
+        <h1 id="viewTitle">Venta asistida por WhatsApp</h1>
+      </div>
+      <div class="actions">
+        <div class="pill"><span class="status"></span>WhatsApp conectado</div>
+        <button id="resetDemo" class="ghost">Reiniciar</button>
+        <button id="runDemo" class="primary">Continuar caso</button>
+      </div>
+    </header>
+
+    <section id="ventas" class="view active">
+      <section class="case-summary panel" aria-label="Resumen del caso">
+        <div class="case-id"><span class="case-dot"></span><div><small>Caso activo</small><strong>Transportes San Martín</strong></div></div>
+        <div><small>Vehículo</small><strong>Volvo FH 500 · 2021</strong><span>Chasis termina en K4821931</span></div>
+        <div><small>Compatibilidad</small><strong class="good">Validada</strong><span>Kit BRK-FH5-E6</span></div>
+        <div><small>Objetivo</small><strong>Retiro hoy</strong><span>Sucursal Renca</span></div>
+      </section>
+
+      <section class="progress panel" aria-label="Progreso de la venta">
+        <div class="progress-head"><span>Flujo comercial</span><strong id="progressLabel">Oferta validada</strong></div>
+        <div class="steps" id="salesProgress">
+          <div class="step done"><i>1</i><span>Consulta</span></div>
+          <div class="step done"><i>2</i><span>Vehículo</span></div>
+          <div class="step done"><i>3</i><span>Compatibilidad</span></div>
+          <div class="step active"><i>4</i><span>Oferta</span></div>
+          <div class="step"><i>5</i><span>Confirmación</span></div>
+          <div class="step"><i>6</i><span>Reserva + NV</span></div>
+        </div>
+      </section>
+
+      <div class="grid">
+        <section class="panel inbox">
+          <div class="panelhead">
+            <div><p class="eyebrow">WHATSAPP</p><h2>Conversaciones</h2></div>
+            <span class="badge">5 activas</span>
+          </div>
+          <div class="list">
+            <article class="conversation active"><div class="avatar">MS</div><div><strong>Marcelo Soto</strong><p>Volvo FH · frenos delanteros</p><small>Ahora</small></div></article>
+            <article class="conversation"><div class="avatar">FC</div><div><strong>Flota Central</strong><p>Necesito 6 filtros de petróleo.</p><small>Hace 3 min</small></div></article>
+            <article class="conversation"><div class="avatar">JP</div><div><strong>Juan Paredes</strong><p>Audio · kit embrague Scania</p><small>Hace 8 min</small></div></article>
+            <article class="conversation"><div class="avatar">TR</div><div><strong>Transportes Rivera</strong><p>¿Tienen foco trasero Actros?</p><small>Hace 12 min</small></div></article>
+            <article class="conversation"><div class="avatar">MA</div><div><strong>Mecánica Andes</strong><p>Cotizar 4 amortiguadores.</p><small>Hace 18 min</small></div></article>
+          </div>
+        </section>
+
+        <section class="panel chat">
+          <div class="chathead">
+            <div class="avatar">MS</div>
+            <div><h2>Marcelo Soto</h2><p>Transportes San Martín · cliente recurrente</p></div>
+            <div class="aistate"><span class="status"></span>IA local</div>
+          </div>
+
+          <div id="chatFeed" class="feed" aria-live="polite">
+            <div class="msg client">Hola, necesito pastillas delanteras para un Volvo FH 500 año 2021. ¿Tienen para retirar hoy?<span>10:12</span></div>
+            <div class="msg ai">Sí, te ayudo. Antes de reservar necesito validar la versión exacta. ¿Me mandas los últimos 8 caracteres del chasis o una foto del padrón?<span>10:12 · IA</span></div>
+            <div class="msg client audio"><button aria-label="Reproducir audio">▶</button><div class="wave"><i style="--h:8px"></i><i style="--h:16px"></i><i style="--h:12px"></i><i style="--h:20px"></i><i style="--h:9px"></i><i style="--h:18px"></i><i style="--h:13px"></i><i style="--h:21px"></i><i style="--h:10px"></i><i style="--h:15px"></i></div><span>0:09</span></div>
+            <div class="transcript">Transcripción local: “Sí, termina en K4821931. Es FH quinientos, dos mil veintiuno.”</div>
+            <div class="system-note"><strong>Compatibilidad validada</strong><span>Volvo FH 500 · 2021 · configuración compatible con BRK-FH5-E6.</span></div>
+            <div class="msg ai">Listo. Tengo el <strong>Kit de pastillas delanteras ProBrake FH Euro 6</strong>, SKU <strong>BRK-FH5-E6</strong>. En Renca quedan <strong>3 kits</strong> a <strong>$186.900 + IVA</strong>. También existe una alternativa Premium a $219.900 + IVA. ¿Quieres el ProBrake?<span>10:13 · IA</span></div>
+          </div>
+
+          <div class="channel-bar">
+            <div><span class="channel-dot"></span><strong>Canal sincronizado con WhatsApp</strong><small>Las respuestas de esta demo se simulan desde “Continuar caso”.</small></div>
+          </div>
+        </section>
+
+        <aside class="stack">
+          <section class="panel stock-card">
+            <div class="stock-title">
+              <div><p class="eyebrow">STOCK + COMPATIBILIDAD</p><h3>ProBrake FH Euro 6</h3></div>
+              <span class="compat">Compatible</span>
+            </div>
+            <div class="product"><div class="producticon">PB</div><div><strong>Kit pastillas freno delantero</strong><span>SKU BRK-FH5-E6 · Línea pesada</span></div></div>
+            <div class="rows">
+              <div class="row"><span>Sucursal Renca</span><strong class="good">3 disponibles</strong></div>
+              <div class="row"><span>Sucursal Quilicura</span><strong>1 disponible</strong></div>
+              <div class="row"><span>Bodega Central</span><strong>12 disponibles</strong></div>
+            </div>
+            <div class="price"><span>Precio neto</span><strong>$186.900</strong></div>
+            <div class="alt"><span>Alternativa compatible</span><strong>PremiumBrake PBX-500</strong><small>$219.900 + IVA · Renca: 5</small></div>
+          </section>
+
+          <section class="panel order-card">
+            <div class="order-head">
+              <div><p class="eyebrow">NOTA DE VENTA</p><h3 id="orderStatus">Borrador automático</h3></div>
+              <span id="orderIndicator" class="statuschip">Sin confirmar</span>
+            </div>
+            <div class="orderfields">
+              <div><span>Empresa</span><strong>Transportes San Martín</strong></div>
+              <div><span>Contacto</span><strong>Marcelo Soto</strong></div>
+              <div><span>Producto</span><strong>BRK-FH5-E6</strong></div>
+              <div><span>Cantidad</span><strong>1 kit</strong></div>
+              <div><span>Retiro</span><strong>Renca · hoy</strong></div>
+              <div><span>Pago</span><strong>Caja / crédito</strong></div>
+            </div>
+            <div class="price total"><span>Total con IVA</span><strong id="orderTotal">$222.411</strong></div>
+            <button id="reserveButton" class="secondary" disabled>Esperando confirmación del cliente</button>
+            <p class="micro">La reserva se habilita sólo después de una aceptación explícita.</p>
+          </section>
+        </aside>
+      </div>
+    </section>
+
+    <section id="inventario" class="view">
+      <div class="section-title">
+        <div><p class="eyebrow">INVENTARIO REPUESTOS CAMIONES</p><h2>Disponibilidad consultada por el vendedor IA</h2><p class="archlead">Datos de demostración. En producción se conectan códigos, precios y stock reales del ERP o base de inventario.</p></div>
+        <span class="badge"><span class="status"></span>Sincronizado</span>
+      </div>
+      <div class="filters panel"><span>Marca: Todas</span><span>Familia: Línea pesada</span><span>Sucursal: Todas</span><strong>6 productos de ejemplo</strong></div>
+      <div class="table panel truck-table">
+        <div class="trow head"><span>Producto / aplicación</span><span>SKU</span><span>Renca</span><span>Quilicura</span><span>Bodega</span><span>Precio neto</span></div>
+        <div class="trow"><strong>Kit pastillas delanteras · Volvo FH/FM Euro 6</strong><span>BRK-FH5-E6</span><span><b class="stocknum ok">3</b></span><span>1</span><span>12</span><strong>$186.900</strong></div>
+        <div class="trow"><strong>Filtro combustible heavy-duty · Volvo FH/FM</strong><span>FLT-FUEL-V46</span><span>18</span><span>9</span><span>44</span><strong>$24.500</strong></div>
+        <div class="trow"><strong>Filtro aire primario · Scania R/S</strong><span>FLT-AIR-SRS</span><span>6</span><span><b class="stocknum warn">2</b></span><span>20</span><strong>$58.900</strong></div>
+        <div class="trow"><strong>Kit embrague 430 mm · Scania R Euro 6</strong><span>CLU-SR-430</span><span><b class="stocknum warn">1</b></span><span><b class="stocknum zero">0</b></span><span>5</span><strong>$689.000</strong></div>
+        <div class="trow"><strong>Amortiguador cabina · Mercedes Actros</strong><span>SUS-ACT-CAB</span><span>8</span><span>5</span><span>16</span><strong>$94.900</strong></div>
+        <div class="trow"><strong>Foco trasero derecho LED · Actros MP4</strong><span>ELE-ACT-RL</span><span>4</span><span>3</span><span>9</span><strong>$129.900</strong></div>
+      </div>
+    </section>
+
+    <section id="pedidos" class="view">
+      <div class="section-title"><div><p class="eyebrow">PEDIDOS</p><h2>Ventas iniciadas por conversación</h2></div><span class="badge">Hoy</span></div>
+      <div class="orders">
+        <article class="panel order-mini"><span class="statuschip ready">Listo para retiro</span><h3>NV-58124</h3><p>Flota Central · Filtros combustible x6</p><footer><span>$174.930 c/IVA</span><strong>Renca</strong></footer></article>
+        <article class="panel order-mini current"><span class="statuschip" id="miniStatus">En conversación</span><h3 id="miniOrder">Borrador</h3><p>Transportes San Martín · Kit freno Volvo FH</p><footer><span>$222.411 c/IVA</span><strong>IA local</strong></footer></article>
+        <article class="panel order-mini"><span class="statuschip paid">Pagado</span><h3>NV-58109</h3><p>Mecánica Andes · Amortiguador cabina x4</p><footer><span>$451.724 c/IVA</span><strong>Retirado</strong></footer></article>
+      </div>
+      <div class="panel workflow">
+        <div><b>1</b><span>Consulta</span><small>WhatsApp / audio</small></div><i>→</i>
+        <div><b>2</b><span>Identificación</span><small>vehículo / chasis</small></div><i>→</i>
+        <div><b>3</b><span>Compatibilidad</span><small>reglas + catálogo</small></div><i>→</i>
+        <div><b>4</b><span>Stock y precio</span><small>ERP / BD</small></div><i>→</i>
+        <div><b>5</b><span>Confirmación</span><small>cliente acepta</small></div><i>→</i>
+        <div><b>6</b><span>Reserva + NV</span><small>retiro en tienda</small></div>
+      </div>
+    </section>
+
+    <section id="arquitectura" class="view">
+      <div class="section-title">
+        <div><p class="eyebrow">ARQUITECTURA PROPUESTA</p><h2>IA local conectada al proceso comercial real</h2><p class="archlead">El modelo conversa y entiende audio, pero inventario, precio y compatibilidad provienen de servicios de negocio controlados y auditables.</p></div>
+        <span class="badge">Local first</span>
+      </div>
+      <div class="flow panel">
+        <div class="node"><b>01</b><strong>WhatsApp</strong><small>Texto · audio · fotos</small></div><div class="arrow">→</div>
+        <div class="node"><b>02</b><strong>Gateway</strong><small>Webhook · identidad · cola</small></div><div class="arrow">→</div>
+        <div class="node core"><b>03</b><strong>Vendedor IA · M6</strong><small>LLM · STT · memoria · políticas</small></div><div class="arrow">→</div>
+        <div class="node"><b>04</b><strong>Motor comercial</strong><small>Compatibilidad · stock · precio</small></div><div class="arrow">→</div>
+        <div class="node"><b>05</b><strong>ERP / Inventario</strong><small>Reserva · NV · trazabilidad</small></div><div class="arrow">→</div>
+        <div class="node"><b>06</b><strong>Tienda</strong><small>Picking · pago · retiro</small></div>
+      </div>
+      <div class="caps">
+        <article class="panel cap"><div class="capicon">VIN</div><h3>Compatibilidad primero</h3><p>Pide patente, chasis, VIN o modelo/año antes de afirmar que un repuesto sirve.</p></article>
+        <article class="panel cap"><div class="capicon">STK</div><h3>Stock real</h3><p>Consulta disponibilidad por sucursal y ofrece traslado o equivalente cuando falta inventario.</p></article>
+        <article class="panel cap"><div class="capicon">NV</div><h3>Venta trazable</h3><p>Reserva sólo después de la aceptación y genera una nota de venta recuperable en tienda.</p></article>
+        <article class="panel cap"><div class="capicon">H</div><h3>Escalamiento humano</h3><p>Deriva dudas técnicas, descuentos fuera de política o conversaciones de baja confianza.</p></article>
+      </div>
+      <div class="panel guardrails">
+        <h3>Reglas operativas</h3>
+        <div><span>01</span><p><strong>No alucinar compatibilidad.</strong> Si falta identificación suficiente del vehículo, preguntar antes de vender.</p></div>
+        <div><span>02</span><p><strong>No prometer stock sin consulta.</strong> La respuesta comercial usa disponibilidad vigente de la BD/ERP.</p></div>
+        <div><span>03</span><p><strong>No reservar sin aceptación.</strong> Primero confirma producto, cantidad, precio, sucursal y condición de pago.</p></div>
+        <div><span>04</span><p><strong>Humano cuando corresponde.</strong> Casos ambiguos o excepciones se derivan con el contexto completo.</p></div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<nav class="mobile-nav" aria-label="Navegación móvil">
+  <button class="active" data-view="ventas"><span>Ventas</span></button>
+  <button data-view="inventario"><span>Stock</span></button>
+  <button data-view="pedidos"><span>Pedidos</span></button>
+  <button data-view="arquitectura"><span>Arquitectura</span></button>
+</nav>
+
+<div id="toast" class="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
